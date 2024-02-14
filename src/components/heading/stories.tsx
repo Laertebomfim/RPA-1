@@ -11,11 +11,11 @@ type Story = StoryObj<typeof Title>;
 
 export const FirstStory: Story = {
   args: {
-    text: 'hello',
     color: true,
     size: 'big',
     type: 'h1',
     TitleCase: true,
+    children: '',
   },
   parameters: {
     backgrounds: {
@@ -25,11 +25,11 @@ export const FirstStory: Story = {
 };
 export const secundStory: Story = {
   args: {
-    text: 'hello2',
     color: false,
     size: 'medium',
     type: 'h3',
     TitleCase: false,
+    children: '',
   },
   parameters: {
     backgrounds: {

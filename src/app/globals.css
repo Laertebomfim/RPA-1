@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-}
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --Media:1200px;
+  }
+/* 
 
 @media (prefers-color-scheme: dark) {
   :root {

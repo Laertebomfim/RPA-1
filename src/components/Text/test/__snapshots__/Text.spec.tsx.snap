@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text/> create an Snapshot 1`] = `
+<p
+  class="text-white font-open_Sans text-base font-normal"
+>
+  text
+</p>
+`;

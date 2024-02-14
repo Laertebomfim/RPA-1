@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeadingMenu/> create an Snapshot 1`] = `
+<div
+  aria-label="menu-mobile"
+  class="fixed p-2 rounded-xl bg-slate-600 top-5 right-10 z-10 md:hidden md:opacity-0"
+>
+  <svg
+    aria-label="open-menu"
+    class="lucide lucide-align-justify "
+    fill="none"
+    height="30"
+    stroke="white"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4"
+    viewBox="0 0 24 24"
+    width="30"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line
+      x1="3"
+      x2="21"
+      y1="6"
+      y2="6"
+    />
+    <line
+      x1="3"
+      x2="21"
+      y1="12"
+      y2="12"
+    />
+    <line
+      x1="3"
+      x2="21"
+      y1="18"
+      y2="18"
+    />
+  </svg>
+</div>
+`;

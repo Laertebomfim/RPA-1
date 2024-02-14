@@ -1,16 +1,16 @@
 import { tv } from 'tailwind-variants';
 
 export const styleHead = tv({
-  base: 'font-bold',
+  base: 'font-black font-montserrat',
   variants: {
     colo: {
       true: 'text-white',
       false: 'text-black',
     },
     size: {
-      big: 'text-4xl md:text-6xl',
-      medium: 'text-4xl',
-      small: 'text-3xl',
+      big: 'text-4xl md:text-5xl',
+      medium: 'text-3xl',
+      small: 'text-2xl',
     },
     uppercase: {
       true: 'uppercase',

@@ -12,9 +12,10 @@ const open_sans = Open_Sans({
   subsets: ['latin'],
   weight: ['400', '700'],
   style: ['normal', 'italic'],
+  variable: '--font-Open_Sans',
 });
 
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['900'],
   style: ['normal', 'italic'],
@@ -27,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={open_sans.className}>{children}</body>
+    <html lang="pt-BR">
+      <body className={`${open_sans.variable} ${montserrat.variable}`}>{children}</body>
     </html>
   );
 }
