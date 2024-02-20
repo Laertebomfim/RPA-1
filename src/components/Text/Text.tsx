@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import { style } from './style';
 
 type TextProps = {
-  children: ReactNode;
+  children?: ReactNode;
   colorBool?: boolean;
   fontFamily?: 'Montserrat' | 'Open_Sans';
   size?: 'base' | 'lg' | 'xl';

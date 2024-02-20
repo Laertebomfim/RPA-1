@@ -1,7 +1,6 @@
 'use client';
 
 import Logo from '@/components/LogoLInk/Logo';
-
 export default function Home() {
   return (
     <>
