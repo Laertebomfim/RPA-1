@@ -18,8 +18,7 @@ export default function Text({
   return (
     <p
       className={style({ color: colorBool, font: fontFamily, font_Size: size, font_weith: weight })}
-    >
-      {children}
-    </p>
+      dangerouslySetInnerHTML={{ __html: typeof children === 'string' && children }}
+    ></p>
   );
 }
