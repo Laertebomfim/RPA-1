@@ -13,25 +13,29 @@ describe('<HeadingMenu/>', () => {
     const { getByLabelText } = render(
       <HeadingMenu information={mockData} img="" link="" text="logo" />,
     );
-    expect(getByLabelText(/menu-infor/i)).toHaveClass('hidden opacity-0');
+    expect(getByLabelText(/menu-big/i)).toHaveClass('hidden opacity-0');
   });
-  it('when he for clicking menu-infor most is visible', () => {
+
+  it('when he be clicking menu-big most is visible', () => {
     const { getByLabelText } = render(
       <HeadingMenu information={mockData} img="" link="" text="logo" />,
     );
-    fireEvent.click(getByLabelText(/menu-mobile/i));
 
-    expect(getByLabelText(/menu-infor/i)).not.toHaveClass('hidden opacity-0');
-
+    // primary click
     fireEvent.click(getByLabelText(/menu-mobile/i));
-    expect(getByLabelText(/menu-infor/i)).toHaveClass('hidden opacity-0');
+    expect(getByLabelText(/menu-big/i)).not.toHaveClass('hidden opacity-0');
+
+    // second click
+    fireEvent.click(getByLabelText(/menu-mobile/i));
+    expect(getByLabelText(/menu-big/i)).toHaveClass('hidden opacity-0');
   });
+
   it('when clicked it hides the menu', () => {
     const { getByRole, getByLabelText } = render(
       <HeadingMenu information={mockData} img="" link="" text="logo" />,
     );
     fireEvent.click(getByLabelText(/menu-mobile/i));
     fireEvent.click(getByRole('article'));
-    expect(getByLabelText(/menu-infor/i)).toHaveClass('hidden opacity-0');
+    expect(getByLabelText(/menu-big/i)).toHaveClass('hidden opacity-0');
   });
 });

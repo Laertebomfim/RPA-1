@@ -1,12 +1,13 @@
 import Title from '../heading/Title';
 import SectionContent from '../sectionContent/Section';
-import './style.css';
+import { styleArticle } from './style';
 
 type GridTextProps = {
   background: boolean;
   html: string;
   TitleText: string;
 };
+
 export default function GridText({ background, TitleText, html }: GridTextProps) {
   return (
     <SectionContent backgroundBoolean={background}>
@@ -14,7 +15,7 @@ export default function GridText({ background, TitleText, html }: GridTextProps)
         <Title TitleCase={true} color={!background} size="medium" type="h2">
           {TitleText}
         </Title>
-        <article dangerouslySetInnerHTML={{ __html: html }}></article>
+        <article className={styleArticle()} dangerouslySetInnerHTML={{ __html: html }}></article>
       </div>
     </SectionContent>
   );

@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const style = tv({
-  base: 'max-w-screenMD mx-auto min-h-screen relative',
+  base: '',
   variants: {
     color: {
       true: 'bg-white text-black',

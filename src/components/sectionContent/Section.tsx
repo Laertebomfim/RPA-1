@@ -6,5 +6,9 @@ type SectionContentProps = {
   backgroundBoolean: boolean;
 };
 export default function SectionContent({ children, backgroundBoolean }: SectionContentProps) {
-  return <section className={style({ color: backgroundBoolean })}>{children}</section>;
+  return (
+    <section className={style({ color: backgroundBoolean })}>
+      <div className="max-w-screenMD mx-auto min-h-screen relative">{children}</div>
+    </section>
+  );
 }

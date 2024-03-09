@@ -4,8 +4,8 @@ import Link from 'next/link';
 import Title from '../heading/Title';
 
 export type LogoProps = {
-  text: string;
-  img: string;
+  text?: string;
+  img?: string;
   link: string;
 };
 

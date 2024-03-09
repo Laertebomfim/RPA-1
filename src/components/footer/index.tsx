@@ -1,4 +1,4 @@
-import SectionContent from '../sectionContent/Section';
+import { styleFooter } from './style';
 
 type FooterProps = {
   text: string;
@@ -6,11 +6,9 @@ type FooterProps = {
 };
 export default function Footer({ text, background }: FooterProps) {
   return (
-    <SectionContent backgroundBoolean={background}>
-      <div
-        className="[&_a]:text-lg text-center py-5 hover:[&_a]:underline underline-offset-[10px]"
-        dangerouslySetInnerHTML={{ __html: text }}
-      ></div>
-    </SectionContent>
+    <article
+      className={styleFooter({ color: background })}
+      dangerouslySetInnerHTML={{ __html: text }}
+    ></article>
   );
 }
