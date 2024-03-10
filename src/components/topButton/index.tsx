@@ -28,7 +28,7 @@ export default function TopButton({ background }: TopButtonProps) {
 
   return (
     <div className="fixed bottom-10 right-10">
-      <Link href={'/#'} aria-description="navigate on top">
+      <Link href={'/#'} title="navigate on top">
         <ArrowUpCircle size={sizeButton} color={background ? 'white' : 'black'} />
       </Link>
     </div>
