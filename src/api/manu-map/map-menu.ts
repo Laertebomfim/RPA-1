@@ -1,4 +1,4 @@
-import { linkType, menutype } from './mock-menu';
+import { linkType, menutype } from './type-menu';
 
 export default function mapMenu(menu: menutype) {
   const {

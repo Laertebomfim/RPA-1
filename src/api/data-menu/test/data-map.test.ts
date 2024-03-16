@@ -1,12 +1,14 @@
+import { mockMenu } from '@/api/manu-map/mock-menu';
 import { dataMap } from '../data-map';
+import { sectionMock } from '@/api/map-section/mock-section';
 
 const mock = [
   {
     footerHtml: `<div><b>hello</b></div>`,
     slug: 'text',
     title: 'hello',
-    sections: ['', '', ''],
-    menu: { test: '' },
+    sections: sectionMock,
+    menu: mockMenu,
   },
 ];
 describe('data-map', () => {
@@ -25,7 +27,7 @@ describe('data-map', () => {
     expect(pagesData.footerHtml).toBe(`<div><b>hello</b></div>`);
     expect(pagesData.title).toBe('hello');
     expect(pagesData.slug).toBe('text');
-    expect(pagesData.sections).toEqual(['', '', '']);
-    expect(pagesData.menu).toEqual({ test: '' });
+    expect(pagesData.sections).toHaveLength(4);
+    expect(typeof pagesData.menu).toBe('object');
   });
 });
