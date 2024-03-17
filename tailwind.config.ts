@@ -3,6 +3,7 @@ const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/template/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -18,8 +19,19 @@ const config: Config = {
         open_Sans: ['var(--font-Open_Sans)'],
         montserrat: ['var(--font-montserrat)'],
       },
+      keyframes: {
+        //Essa é uma animação para o component loading, que vai ser usada no seu svg.
+        loading: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        loading: 'loading 2s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
 };
 export default config;
+// https://www.youtube.com/watch?v=ewRjZoRtu0Y&list=RDeYDI8b5Nn5s&index=23
