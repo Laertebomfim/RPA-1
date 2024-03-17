@@ -1,23 +1,24 @@
 import mapMenu from '../manu-map/map-menu';
 import { menutype } from '../manu-map/type-menu';
+import mapFooter, { footerType } from '../map-footer/map_footer';
 import mapSection from '../map-section/map-section';
 import { dataSectionType } from '../map-section/type-map-section';
 
-export const dataMap = (
-  Data: {
-    footerHtml: string;
-    slug: string;
-    title: string;
-    sections: dataSectionType;
-    menu: menutype;
-  }[],
-) => {
-  const { footerHtml, menu, sections, slug, title } = Data[0];
+export type datatype = {
+  footer: footerType;
+  slug: string;
+  title: string;
+  section: dataSectionType;
+  menu: menutype;
+};
+
+export const dataMap = (Data: datatype) => {
+  const { footer, menu, section, slug, title } = Data;
   return {
-    footerHtml: footerHtml,
+    footerHtml: mapFooter(footer),
     slug: slug,
     title: title,
-    sections: mapSection(sections),
+    sections: mapSection(section),
     menu: mapMenu(menu),
   };
 };

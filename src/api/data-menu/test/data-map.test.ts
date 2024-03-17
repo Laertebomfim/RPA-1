@@ -1,21 +1,20 @@
 import { mockMenu } from '@/api/manu-map/mock-menu';
 import { dataMap } from '../data-map';
 import { sectionMock } from '@/api/map-section/mock-section';
+import { footerMock } from '@/api/map-footer/footer_mock';
 
-const mock = [
-  {
-    footerHtml: `<div><b>hello</b></div>`,
-    slug: 'text',
-    title: 'hello',
-    sections: sectionMock,
-    menu: mockMenu,
-  },
-];
+const mock = {
+  footer: footerMock,
+  slug: 'text',
+  title: 'hello',
+  section: sectionMock,
+  menu: mockMenu,
+};
 describe('data-map', () => {
   it('deve mapear um array de dados mesmo vazio ', () => {
     const pagesData = dataMap(mock);
 
-    expect(typeof pagesData.footerHtml).toBe('string');
+    expect(typeof pagesData.footerHtml.text).toBe('string');
     expect(typeof pagesData.slug).toBe('string');
     expect(typeof pagesData.title).toBe('string');
     expect(typeof pagesData.menu).toEqual('object');
@@ -24,7 +23,7 @@ describe('data-map', () => {
 
   it('as informações que forem passadas devem ser retornadas', () => {
     const pagesData = dataMap(mock);
-    expect(pagesData.footerHtml).toBe(`<div><b>hello</b></div>`);
+    expect(pagesData.footerHtml.text).toBe(`<b>hello</b>`);
     expect(pagesData.title).toBe('hello');
     expect(pagesData.slug).toBe('text');
     expect(pagesData.sections).toHaveLength(4);
