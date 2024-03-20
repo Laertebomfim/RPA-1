@@ -7,11 +7,23 @@ export type BaseProps = HeadingMenuProps & {
   children: ReactNode;
   textFooter: string;
 };
-export default function Base({ children, information, img, text, link, textFooter }: BaseProps) {
+export default function Base({
+  children,
+  information,
+  logoLink,
+  logoText,
+  logoImgUrl,
+  textFooter,
+}: BaseProps) {
   return (
     <>
       <header className="bg-white sticky top-0 z-10">
-        <HeadingMenu information={information} img={img} text={text} link={link}></HeadingMenu>
+        <HeadingMenu
+          information={information}
+          logoLink={logoLink}
+          logoText={logoText}
+          logoImgUrl={logoImgUrl}
+        ></HeadingMenu>
       </header>
       <main>
         {children}

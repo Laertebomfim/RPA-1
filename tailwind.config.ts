@@ -34,4 +34,3 @@ const config: Config = {
   plugins: [],
 };
 export default config;
-// https://www.youtube.com/watch?v=ewRjZoRtu0Y&list=RDeYDI8b5Nn5s&index=23

@@ -4,18 +4,22 @@ import { styleArticle } from './style';
 
 type GridTextProps = {
   background: boolean;
-  html: string;
+  text: string[];
   TitleText: string;
 };
 
-export default function GridText({ background, TitleText, html }: GridTextProps) {
+export default function GridText({ background, TitleText, text }: GridTextProps) {
   return (
     <SectionContent backgroundBoolean={background}>
-      <div className="text-center max-w-[580px] mx-auto">
+      <div className="text-center max-w-[580px] mx-auto pt-16">
         <Title TitleCase={true} color={!background} size="medium" type="h2">
           {TitleText}
         </Title>
-        <article className={styleArticle()} dangerouslySetInnerHTML={{ __html: html }}></article>
+        <article className={styleArticle()}>
+          {text.map((element, inds) => (
+            <p key={inds}>{element}</p>
+          ))}
+        </article>
       </div>
     </SectionContent>
   );

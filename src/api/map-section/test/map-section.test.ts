@@ -30,7 +30,7 @@ describe('map-section', () => {
   it('return on the mapSectionContent, must have valuer correct', () => {
     const data = mapSectionContent(SectionContentMock);
     expect(data.title).toBe('NEWS COVERAGE');
-    expect(data.decryption).toHaveLength(5);
+    expect(data.decryption).toHaveLength(3);
     expect(data.urlHead).toBe('NEWS-COVERAGE-AND-SOME-SURPRISES');
     expect(data.background).toBe(false);
   });

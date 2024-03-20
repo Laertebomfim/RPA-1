@@ -11,8 +11,8 @@ type story = StoryObj<typeof HeadingMenu>;
 export const Primary: story = {
   args: {
     information: Mock,
-    img: '',
-    link: '',
-    text: 'logo',
+    logoImgUrl: '',
+    logoLink: '',
+    logoText: 'logo',
   },
 };

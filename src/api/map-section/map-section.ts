@@ -35,9 +35,24 @@ export function mapSectionTowColumns(section: sectionSobre) {
 
 export function mapSectionContent(section: sectionContent) {
   const { title, decription: decryption, metadata } = section;
+
+  const returnDescription = (data: typeof decryption) => {
+    let returnData: string[] = [];
+
+    data.forEach((description) => {
+      let text = '';
+      description.children.forEach((son) => {
+        text += son.text;
+      });
+      if (text != '') returnData.push(text);
+    });
+
+    return returnData;
+  };
+
   return {
     title,
-    decryption,
+    decryption: returnDescription(decryption),
     urlHead: metadata.id_title,
     background: metadata.backgroud,
   };

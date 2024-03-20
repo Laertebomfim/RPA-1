@@ -5,7 +5,7 @@ import { style } from './style';
 type LinkProps = {
   children: ReactNode;
   http: string;
-  newtab?: '_blank' | '_self';
+  newtab?: '_blank' | '_self' | string;
 };
 export default function LinkComponent({ children, http, newtab }: LinkProps) {
   return (

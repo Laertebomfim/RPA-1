@@ -26,6 +26,6 @@ function mapLink(links: linkType) {
   return links.map((elem) => ({
     children: elem.link_text,
     http: elem.link_url,
-    newtab: false,
+    newTab: '_self',
   }));
 }

@@ -11,6 +11,42 @@ export type datatype = {
   section: dataSectionType;
   menu: menutype;
 };
+export type returnDataType = {
+  footerHtml: {
+    text: string;
+  };
+  slug: string;
+  title: string;
+  sections: [
+    {
+      title: string;
+      description: string;
+      img: string;
+      metadata: {
+        id: number;
+        id_title: string;
+        backgroud: boolean;
+      };
+    },
+    {
+      title: string;
+      decryption: string[];
+      urlHead: string;
+      background: boolean;
+    },
+  ];
+  menu: {
+    newTab: boolean;
+    text: string;
+    img: string;
+    link: string;
+    links: {
+      children: string;
+      http: string;
+      newTab: string;
+    }[];
+  };
+};
 
 export const dataMap = (Data: datatype) => {
   const { footer, menu, section, slug, title } = Data;

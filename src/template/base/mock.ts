@@ -15,7 +15,7 @@ export const mock: BaseProps = {
     { children: 'link', http: 'http://www.test.com' },
     { children: 'link', http: 'http://www.test.com' },
   ],
-  img: '',
-  text: 'Logo',
-  link: '#',
+  logoLink: '',
+  logoText: 'Logo',
+  logoImgUrl: '#',
 };

@@ -15,6 +15,6 @@ describe('map-menu', () => {
 
     expect(dataMenu.links[0].children).toBe('intro');
     expect(dataMenu.links[0].http).toBe('#intro');
-    expect(dataMenu.links[0].newtab).toBe(false);
+    expect(dataMenu.links[0].newTab).toBe('_self');
   });
 });
