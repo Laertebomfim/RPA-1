@@ -41,7 +41,7 @@ describe('map-section', () => {
     expect(data.decryption).toBe('Uma breve descrição.');
     expect(data.urlHead).toBe('MY-GRID');
     expect(data.background).toBe(true);
-    expect(data.text_grid.every((e) => !e.title && !e.descricao));
+    expect(data.text_grid.every((e) => !e.Title && !e.description));
     expect(data.img_url).toBe('hello.jpg');
   });
 

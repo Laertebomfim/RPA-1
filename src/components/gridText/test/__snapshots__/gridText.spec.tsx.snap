@@ -8,10 +8,10 @@ exports[` component is screen 1`] = `
     class="max-w-screenMD mx-auto min-h-screen relative"
   >
     <div
-      class="text-center max-w-[580px] mx-auto pt-16"
+      class="text-center max-w-[580px] mx-auto pt-16 px-10"
     >
       <h2
-        class="font-black font-montserrat text-black text-3xl uppercase"
+        class="font-black font-montserrat text-black text-4xl md:text-6xl uppercase"
       >
         my title 
       </h2>

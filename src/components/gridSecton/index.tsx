@@ -19,7 +19,7 @@ export default function GridSection({
 }: GridSectionProps) {
   return (
     <SectionContent backgroundBoolean={background}>
-      <div>
+      <div className="p-10">
         <Title TitleCase={true} color={!background} size="big" type="h2">
           {TitleText}
         </Title>
@@ -28,12 +28,12 @@ export default function GridSection({
 
         <div className={styleGrid()}>
           {grid.map((e, i) => (
-            <div key={i}>
+            <div key={i} className="py-4">
               <div className="relative ">
                 <h3 className={styleH3()}>{e.Title}</h3>
                 <span className={styleSpan()}>{i + 1}</span>
               </div>
-              <p className="text-lg pt-5 leading-8">{e.description}</p>
+              <p className="text-lg pt-5 leading-8 w-full">{e.description}</p>
             </div>
           ))}
         </div>

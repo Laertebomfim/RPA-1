@@ -2,21 +2,13 @@ import { linkType, menutype } from './type-menu';
 
 export default function mapMenu(menu: menutype) {
   const {
-    logo: {
-      img: {
-        data: {
-          attributes: { url },
-        },
-      },
-      link_url,
-      text,
-    },
+    logo: { img, link_url, text },
     link,
   } = menu;
   return {
     newTab: false,
     text: text,
-    img: url,
+    img: img.data != null ? img.data.attributes.url : null,
     link: link_url,
     links: mapLink(link),
   };

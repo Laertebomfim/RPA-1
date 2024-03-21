@@ -15,8 +15,8 @@ type GridImgProps = {
 export default function GridImg({ background, TitleText, descriptionP, gridImg }: GridImgProps) {
   return (
     <SectionContent backgroundBoolean={background}>
-      <div>
-        <Title TitleCase={true} color={!background} size="medium" type="h2">
+      <div className="p-10">
+        <Title TitleCase={true} color={!background} size="big" type="h2">
           {TitleText}
         </Title>
 
@@ -24,9 +24,9 @@ export default function GridImg({ background, TitleText, descriptionP, gridImg }
 
         <div className={styleGrid()}>
           {gridImg.map((e, i) => (
-            <div key={i} className="overflow-hidden">
+            <div key={i} className="overflow-hidden w-full">
               <img
-                className="hover:scale-125 hover:rotate-3 duration-150"
+                className="hover:scale-125 hover:rotate-12 duration-150 w-full"
                 src={e.srcImg}
                 alt={e.TitleAlt}
               />

@@ -65,7 +65,12 @@ export function mapSectionGridText(section: sectionGridText) {
     decryption,
     urlHead: metadata.id_title,
     background: metadata.backgroud,
-    text_grid,
+
+    text_grid: text_grid.map((element) => ({
+      Title: element.title,
+      description: element.descricao,
+    })),
+
     img_url: img_grid[0].img.data.attributes.url,
   };
 }
@@ -77,6 +82,6 @@ export function mapSectionGridImg(section: sectionGridImg) {
     decryption,
     urlHead: metadata.id_title,
     background: metadata.backgroud,
-    img: img_grid.map((e) => ({ url: e.img.data.attributes.url, altText: 'imagem-GALLERY' })),
+    img: img_grid.map((e) => ({ srcImg: e.img.data.attributes.url, TitleAlt: 'imagem-GALLERY' })),
   };
 }

@@ -86,7 +86,7 @@ describe('<Title/>', () => {
     const elementTitleBlack = screen.getByRole('heading', { name: /test/i });
     expect(elementTitleBlack).toHaveClass('text-black');
   });
-  it('its size must is font-size: 2xl | 3xl | 4xl ', () => {
+  it('its size must is font-size: 2xl | 3xl | 6xl ', () => {
     const { rerender } = render(
       <Title type="h1" color={true} size="small" TitleCase={false}>
         test
@@ -104,11 +104,11 @@ describe('<Title/>', () => {
     const elementTitleMedium = screen.getByRole('heading', { name: /test/i });
     expect(elementTitleMedium).toHaveClass('text-3xl');
 
-    // title 5xl
+    // title 6xl
 
     Rerender(rerender, 'h1', true, 'big');
     const elementTitleBig = screen.getByRole('heading', { name: /test/i });
-    expect(elementTitleBig).toHaveClass('md:text-5xl');
+    expect(elementTitleBig).toHaveClass('md:text-6xl');
   });
 
   it('the style must to is uppercase | lowercase', () => {

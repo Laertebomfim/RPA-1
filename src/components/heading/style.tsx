@@ -8,7 +8,7 @@ export const styleHead = tv({
       false: 'text-black',
     },
     size: {
-      big: 'text-3xl md:text-5xl',
+      big: 'text-4xl md:text-6xl',
       medium: 'text-3xl',
       small: 'text-2xl',
     },

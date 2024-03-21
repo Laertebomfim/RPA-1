@@ -34,6 +34,27 @@ export type returnDataType = {
       urlHead: string;
       background: boolean;
     },
+    {
+      title: string;
+      decryption: string;
+      urlHead: string;
+      background: boolean;
+      text_grid: {
+        Title: string;
+        description: string;
+      }[];
+      img_url: string;
+    },
+    {
+      title: string;
+      decryption: string;
+      urlHead: string;
+      background: boolean;
+      img: {
+        srcImg: string;
+        TitleAlt: string;
+      }[];
+    },
   ];
   menu: {
     newTab: boolean;

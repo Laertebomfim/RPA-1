@@ -6,6 +6,8 @@ import Error404 from '@/template/error-404/Error404';
 import Loading from '@/template/loading/Loading';
 import GridComponent from '@/components/grid';
 import GridText from '@/components/gridText';
+import GridSection from '@/components/gridSecton';
+import GridImg from '@/components/gridImg';
 
 export default function Home() {
   const [data, setData] = useState<returnDataType | {}>({});
@@ -17,6 +19,7 @@ export default function Home() {
           e.json(),
         );
         setData(dataMap(dataApi.data.attributes));
+        console.log(dataApi.data.attributes);
       } catch (error404) {
         console.error(error404);
         setData({ error: 'error' });
@@ -36,8 +39,7 @@ export default function Home() {
 
   const { links, img, link, text } = menu;
 
-  const [resultAbout, sectionDescriptin] = sections;
-  console.log(sectionDescriptin);
+  const [resultAbout, sectionDescriptin, sectionGrid, sectionImg] = sections;
   return (
     <Base
       information={links}
@@ -56,6 +58,18 @@ export default function Home() {
         TitleText={sectionDescriptin.title}
         background={sectionDescriptin.background}
         text={sectionDescriptin.decryption}
+      />
+      <GridSection
+        TitleText={sectionGrid.title}
+        background={sectionGrid.background}
+        descriptionP={sectionGrid.decryption}
+        grid={sectionGrid.text_grid}
+      />
+      <GridImg
+        TitleText={sectionImg.title}
+        background={sectionImg.background}
+        descriptionP={sectionImg.decryption}
+        gridImg={sectionImg.img}
       />
     </Base>
   );
