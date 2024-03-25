@@ -9,10 +9,17 @@ type GridComponentProps = {
   textP: string;
   textTitle: string;
   img: string;
+  sectionID: string;
 };
-export default function GridComponent({ background, textP, textTitle, img }: GridComponentProps) {
+export default function GridComponent({
+  background,
+  textP,
+  textTitle,
+  img,
+  sectionID,
+}: GridComponentProps) {
   return (
-    <SectionContent backgroundBoolean={background}>
+    <SectionContent backgroundBoolean={background} sectionId={sectionID}>
       <article className={styleArticle()}>
         <div className={styleContainDiv()}>
           <Title TitleCase={true} color={!background} size="big" type="h1">

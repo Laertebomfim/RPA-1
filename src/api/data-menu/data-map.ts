@@ -33,6 +33,7 @@ export type returnDataType = {
       decryption: string[];
       urlHead: string;
       background: boolean;
+      Table: any;
     },
     {
       title: string;
@@ -54,6 +55,24 @@ export type returnDataType = {
         srcImg: string;
         TitleAlt: string;
       }[];
+    },
+    {
+      title: string;
+      decryption: string;
+      urlHead: string;
+      background: boolean;
+      text_grid: {
+        Title: string;
+        description: string;
+      }[];
+      img_url: string;
+    },
+    {
+      title: string;
+      decryption: string[];
+      urlHead: string;
+      background: boolean;
+      Table: any;
     },
   ];
   menu: {

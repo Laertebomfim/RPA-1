@@ -5,8 +5,8 @@
             "title": "JANUARY BRINGS US FIREFOX 85",
             "slug": "january-brings-us-firefox-85",
             "createdAt": "2024-01-27T23:16:21.665Z",
-            "updatedAt": "2024-03-10T12:27:21.556Z",
-            "publishedAt": "2024-03-10T12:27:21.092Z",
+            "updatedAt": "2024-03-23T01:53:45.214Z",
+            "publishedAt": "2024-03-23T01:53:44.765Z",
             "footer": [
                 {
                     "type": "paragraph",
@@ -52,8 +52,8 @@
                     },
                     "metadata": {
                         "id": 1,
-                        "id_title": "JANUARY",
-                        "backgroud": true
+                        "id_title": "home",
+                        "backgroud": false
                     }
                 },
                 {
@@ -124,9 +124,10 @@
                     ],
                     "metadata": {
                         "id": 5,
-                        "id_title": "NEWS-COVERAGE-AND-SOME-SURPRISES",
-                        "backgroud": false
-                    }
+                        "id_title": "intro",
+                        "backgroud": true
+                    },
+                    "Table": null
                 },
                 {
                     "id": 2,
@@ -135,8 +136,8 @@
                     "description": "Uma breve descrição.",
                     "metadata": {
                         "id": 3,
-                        "id_title": "MY-GRID",
-                        "backgroud": true
+                        "id_title": "grid-one",
+                        "backgroud": false
                     },
                     "text_grid": [
                         {
@@ -157,12 +158,12 @@
                     ],
                     "img_grid": [
                         {
-                            "id": 7,
+                            "id": 8,
                             "img": {
                                 "data": {
-                                    "id": 7,
+                                    "id": 5,
                                     "attributes": {
-                                        "name": "photo-1680964258021-4219e28d2481.jpg",
+                                        "name": "photo-1634500685584-0778d45a1953.jpg",
                                         "alternativeText": null,
                                         "caption": null,
                                         "width": 360,
@@ -170,33 +171,33 @@
                                         "formats": {
                                             "thumbnail": {
                                                 "ext": ".jpg",
-                                                "url": "https://res.cloudinary.com/dv1e4mb9g/image/upload/v1706398409/thumbnail_photo_1680964258021_4219e28d2481_010c376755.jpg",
-                                                "hash": "thumbnail_photo_1680964258021_4219e28d2481_010c376755",
+                                                "url": "https://res.cloudinary.com/dv1e4mb9g/image/upload/v1706398409/thumbnail_photo_1634500685584_0778d45a1953_73f8c7e398.jpg",
+                                                "hash": "thumbnail_photo_1634500685584_0778d45a1953_73f8c7e398",
                                                 "mime": "image/jpeg",
-                                                "name": "thumbnail_photo-1680964258021-4219e28d2481.jpg",
+                                                "name": "thumbnail_photo-1634500685584-0778d45a1953.jpg",
                                                 "path": null,
-                                                "size": 5.73,
+                                                "size": 3.86,
                                                 "width": 156,
                                                 "height": 156,
                                                 "provider_metadata": {
-                                                    "public_id": "thumbnail_photo_1680964258021_4219e28d2481_010c376755",
+                                                    "public_id": "thumbnail_photo_1634500685584_0778d45a1953_73f8c7e398",
                                                     "resource_type": "image"
                                                 }
                                             }
                                         },
-                                        "hash": "photo_1680964258021_4219e28d2481_010c376755",
+                                        "hash": "photo_1634500685584_0778d45a1953_73f8c7e398",
                                         "ext": ".jpg",
                                         "mime": "image/jpeg",
-                                        "size": 27.04,
-                                        "url": "https://res.cloudinary.com/dv1e4mb9g/image/upload/v1706398410/photo_1680964258021_4219e28d2481_010c376755.jpg",
+                                        "size": 16.9,
+                                        "url": "https://res.cloudinary.com/dv1e4mb9g/image/upload/v1706398410/photo_1634500685584_0778d45a1953_73f8c7e398.jpg",
                                         "previewUrl": null,
                                         "provider": "cloudinary",
                                         "provider_metadata": {
-                                            "public_id": "photo_1680964258021_4219e28d2481_010c376755",
+                                            "public_id": "photo_1634500685584_0778d45a1953_73f8c7e398",
                                             "resource_type": "image"
                                         },
-                                        "createdAt": "2024-01-27T23:33:31.061Z",
-                                        "updatedAt": "2024-03-10T12:25:41.871Z"
+                                        "createdAt": "2024-01-27T23:33:30.854Z",
+                                        "updatedAt": "2024-03-13T01:23:15.126Z"
                                     }
                                 }
                             }
@@ -210,8 +211,8 @@
                     "description": "Uma breve descrição.",
                     "metadata": {
                         "id": 4,
-                        "id_title": "GALLERY",
-                        "backgroud": false
+                        "id_title": "gallery",
+                        "backgroud": true
                     },
                     "text_grid": [
                         {
@@ -306,7 +307,7 @@
                                             "resource_type": "image"
                                         },
                                         "createdAt": "2024-01-27T23:33:31.061Z",
-                                        "updatedAt": "2024-03-10T12:25:41.871Z"
+                                        "updatedAt": "2024-03-22T01:17:31.737Z"
                                     }
                                 }
                             }
@@ -396,7 +397,7 @@
                                             "resource_type": "image"
                                         },
                                         "createdAt": "2024-01-27T23:33:30.854Z",
-                                        "updatedAt": "2024-01-27T23:33:30.854Z"
+                                        "updatedAt": "2024-03-13T01:23:15.126Z"
                                     }
                                 }
                             }
@@ -492,6 +493,167 @@
                             }
                         }
                     ]
+                },
+                {
+                    "id": 3,
+                    "__component": "section.section-grid",
+                    "title": "MY GRID",
+                    "description": "Uma breve descrição.",
+                    "metadata": {
+                        "id": 6,
+                        "id_title": "grid-two",
+                        "backgroud": false
+                    },
+                    "text_grid": [
+                        {
+                            "id": 5,
+                            "title": "Teste",
+                            "descricao": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores."
+                        },
+                        {
+                            "id": 6,
+                            "title": "Teste",
+                            "descricao": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores."
+                        },
+                        {
+                            "id": 7,
+                            "title": "Teste",
+                            "descricao": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores."
+                        }
+                    ],
+                    "img_grid": [
+                        {
+                            "id": 9,
+                            "img": {
+                                "data": {
+                                    "id": 7,
+                                    "attributes": {
+                                        "name": "photo-1680964258021-4219e28d2481.jpg",
+                                        "alternativeText": null,
+                                        "caption": null,
+                                        "width": 360,
+                                        "height": 360,
+                                        "formats": {
+                                            "thumbnail": {
+                                                "ext": ".jpg",
+                                                "url": "https://res.cloudinary.com/dv1e4mb9g/image/upload/v1706398409/thumbnail_photo_1680964258021_4219e28d2481_010c376755.jpg",
+                                                "hash": "thumbnail_photo_1680964258021_4219e28d2481_010c376755",
+                                                "mime": "image/jpeg",
+                                                "name": "thumbnail_photo-1680964258021-4219e28d2481.jpg",
+                                                "path": null,
+                                                "size": 5.73,
+                                                "width": 156,
+                                                "height": 156,
+                                                "provider_metadata": {
+                                                    "public_id": "thumbnail_photo_1680964258021_4219e28d2481_010c376755",
+                                                    "resource_type": "image"
+                                                }
+                                            }
+                                        },
+                                        "hash": "photo_1680964258021_4219e28d2481_010c376755",
+                                        "ext": ".jpg",
+                                        "mime": "image/jpeg",
+                                        "size": 27.04,
+                                        "url": "https://res.cloudinary.com/dv1e4mb9g/image/upload/v1706398410/photo_1680964258021_4219e28d2481_010c376755.jpg",
+                                        "previewUrl": null,
+                                        "provider": "cloudinary",
+                                        "provider_metadata": {
+                                            "public_id": "photo_1680964258021_4219e28d2481_010c376755",
+                                            "resource_type": "image"
+                                        },
+                                        "createdAt": "2024-01-27T23:33:31.061Z",
+                                        "updatedAt": "2024-03-22T01:17:31.737Z"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "__component": "section.section-texto",
+                    "title": "PRICING",
+                    "decription": [
+                        {
+                            "type": "paragraph",
+                            "children": [
+                                {
+                                    "text": "The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "children": [
+                                {
+                                    "text": "",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "paragraph",
+                            "children": [
+                                {
+                                    "text": "We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ],
+                    "metadata": {
+                        "id": 7,
+                        "id_title": "pricing",
+                        "backgroud": false
+                    },
+                 "Table": {
+                        "id": 1,
+                        "title_tible": [
+                            {
+                                "id": 2,
+                                "colum_2": "Title-2",
+                                "colum_3": "Title-3",
+                                "colum_4": "Title-4",
+                                "colum_5": "Title-5",
+                                "colum_1": null
+                            }
+                        ],
+                        "data_colum_table": [
+                            {
+                                "id": 4,
+                                "colum_1": "Content-1",
+                                "colum_2": "Content-2",
+                                "colum_3": "Content-3",
+                                "colum_4": "Content-4",
+                                "colum_5": "Content-5"
+                            },
+                            {
+                                "id": 5,
+                                "colum_1": "Content-1",
+                                "colum_2": "Content-2",
+                                "colum_3": "Content-3",
+                                "colum_4": "Content-4",
+                                "colum_5": "Content-5"
+                            },
+                            {
+                                "id": 6,
+                                "colum_1": "Content-1",
+                                "colum_2": "Content-2",
+                                "colum_3": "Content-3",
+                                "colum_4": "Content-4",
+                                "colum_5": "Content-5"
+                            },
+                            {
+                                "id": 7,
+                                "colum_1": "Content-1",
+                                "colum_2": "Content-2",
+                                "colum_3": "Content-3",
+                                "colum_4": "Content-4",
+                                "colum_5": "Content-5"
+                            }
+                        ]
+                    }
                 }
             ],
             "menu": {
@@ -538,7 +700,7 @@
                         "link_text": "grid-one",
                         "link_url": "#grid-one"
                     },
-                {
+                    {
                         "id": 5,
                         "link_text": "gallery",
                         "link_url": "#gallery"

@@ -11,10 +11,17 @@ type GridImgProps = {
     TitleAlt: string;
     srcImg: string;
   }[];
+  sectionID: string;
 };
-export default function GridImg({ background, TitleText, descriptionP, gridImg }: GridImgProps) {
+export default function GridImg({
+  background,
+  TitleText,
+  descriptionP,
+  gridImg,
+  sectionID,
+}: GridImgProps) {
   return (
-    <SectionContent backgroundBoolean={background}>
+    <SectionContent backgroundBoolean={background} sectionId={sectionID}>
       <div className="p-10">
         <Title TitleCase={true} color={!background} size="big" type="h2">
           {TitleText}

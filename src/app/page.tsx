@@ -39,7 +39,14 @@ export default function Home() {
 
   const { links, img, link, text } = menu;
 
-  const [resultAbout, sectionDescriptin, sectionGrid, sectionImg] = sections;
+  const [
+    resultAbout,
+    sectionDescriptin,
+    sectionGrid,
+    sectionImg,
+    sectionGridSecond,
+    sectionDescriptinSecond,
+  ] = sections;
   return (
     <Base
       information={links}
@@ -53,24 +60,44 @@ export default function Home() {
         img={resultAbout.img}
         textP={resultAbout.description}
         textTitle={resultAbout.title}
+        sectionID={resultAbout.metadata.id_title}
       />
       <GridText
         TitleText={sectionDescriptin.title}
         background={sectionDescriptin.background}
         text={sectionDescriptin.decryption}
+        sectionID={sectionDescriptin.urlHead}
+        tableComponent={sectionDescriptin.Table}
       />
       <GridSection
         TitleText={sectionGrid.title}
         background={sectionGrid.background}
         descriptionP={sectionGrid.decryption}
         grid={sectionGrid.text_grid}
+        sectionID={sectionGrid.urlHead}
       />
       <GridImg
         TitleText={sectionImg.title}
         background={sectionImg.background}
         descriptionP={sectionImg.decryption}
         gridImg={sectionImg.img}
+        sectionID={sectionImg.urlHead}
+      />
+      <GridSection
+        TitleText={sectionGridSecond.title}
+        background={sectionGridSecond.background}
+        descriptionP={sectionGridSecond.decryption}
+        grid={sectionGridSecond.text_grid}
+        sectionID={sectionGridSecond.urlHead}
+      />
+      <GridText
+        TitleText={sectionDescriptinSecond.title}
+        background={sectionDescriptinSecond.background}
+        text={sectionDescriptinSecond.decryption}
+        sectionID={sectionDescriptinSecond.urlHead}
+        tableComponent={sectionDescriptinSecond.Table}
       />
     </Base>
   );
 }
+// # # #contact

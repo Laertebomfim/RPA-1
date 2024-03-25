@@ -10,15 +10,17 @@ type GridSectionProps = {
     Title: string;
     description: string;
   }[];
+  sectionID: string;
 };
 export default function GridSection({
   background,
   TitleText,
   descriptionP,
   grid,
+  sectionID,
 }: GridSectionProps) {
   return (
-    <SectionContent backgroundBoolean={background}>
+    <SectionContent backgroundBoolean={background} sectionId={sectionID}>
       <div className="p-10">
         <Title TitleCase={true} color={!background} size="big" type="h2">
           {TitleText}

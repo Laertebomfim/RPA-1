@@ -34,7 +34,7 @@ export function mapSectionTowColumns(section: sectionSobre) {
 }
 
 export function mapSectionContent(section: sectionContent) {
-  const { title, decription: decryption, metadata } = section;
+  const { title, decription: decryption, metadata, Table } = section;
 
   const returnDescription = (data: typeof decryption) => {
     let returnData: string[] = [];
@@ -55,11 +55,13 @@ export function mapSectionContent(section: sectionContent) {
     decryption: returnDescription(decryption),
     urlHead: metadata.id_title,
     background: metadata.backgroud,
+    Table: Table ? Table : {},
   };
 }
 
 export function mapSectionGridText(section: sectionGridText) {
   const { title, description: decryption, metadata, img_grid, text_grid } = section;
+
   return {
     title,
     decryption,

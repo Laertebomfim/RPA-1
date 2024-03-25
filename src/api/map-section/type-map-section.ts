@@ -57,6 +57,28 @@ export type sectionContent = {
     id_title: string;
     backgroud: boolean;
   };
+  Table?: {
+    id: number;
+    title_tible: [
+      {
+        id: number;
+        colum_2: string;
+        colum_3: string;
+        colum_4: string;
+        colum_5: string;
+        colum_1: string;
+      },
+    ];
+
+    data_colum_table: {
+      id: number;
+      colum_1: string;
+      colum_2: string;
+      colum_3: string;
+      colum_4: string;
+      colum_5: string;
+    }[];
+  };
 };
 
 export type sectionGridText = {
