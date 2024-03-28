@@ -3,6 +3,7 @@
 exports[` component is screen 1`] = `
 <section
   class="bg-white text-black"
+  id="idSection"
 >
   <div
     class="max-w-screenMD mx-auto min-h-screen relative"
@@ -22,6 +23,9 @@ exports[` component is screen 1`] = `
           hi 
         </p>
       </article>
+      <article
+        class="w-full  overflow-x-scroll"
+      />
     </div>
   </div>
 </section>

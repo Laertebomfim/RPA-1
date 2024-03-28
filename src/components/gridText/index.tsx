@@ -7,26 +7,28 @@ type GridTextProps = {
   text: string[];
   TitleText: string;
   sectionID: string;
-  tableComponent: {
-    title_tible: [
-      {
-        id: number;
-        colum_2: string;
-        colum_3: string;
-        colum_4: string;
-        colum_5: string;
-        colum_1: string;
-      },
-    ];
-    data_colum_table: {
-      id: number;
-      colum_1: string;
-      colum_2: string;
-      colum_3: string;
-      colum_4: string;
-      colum_5: string;
-    }[];
-  };
+  tableComponent:
+    | {
+        title_tible: [
+          {
+            id: number;
+            colum_2: string;
+            colum_3: string;
+            colum_4: string;
+            colum_5: string;
+            colum_1: string;
+          },
+        ];
+        data_colum_table: {
+          id: number;
+          colum_1: string;
+          colum_2: string;
+          colum_3: string;
+          colum_4: string;
+          colum_5: string;
+        }[];
+      }
+    | undefined;
 };
 
 export default function GridText({
@@ -47,8 +49,9 @@ export default function GridText({
             <p key={inds}>{element}</p>
           ))}
         </article>
+
         <article className="w-full  overflow-x-scroll">
-          {Object.keys(tableComponent).length > 0 && (
+          {!!tableComponent && (
             <table className="mx-auto">
               <thead className="[&_th]:border-solid [&_th]:border-2 [&_th] [&_th]:py-3 [&_th]:border-collapse">
                 <tr>
@@ -77,19 +80,3 @@ export default function GridText({
     </SectionContent>
   );
 }
-/*  title_tible: [{
-        id: number;
-        colum_2: string;
-        colum_3: string;
-        colum_4: string;
-        colum_5: string;
-        colum_1: string;
-    }];
-    data_colum_table: {
-        id: number;
-        colum_1: string;
-        colum_2: string;
-        colum_3: string;
-        colum_4: string;
-        colum_5: string;
-    }[];*/

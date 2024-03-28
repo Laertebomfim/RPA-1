@@ -55,7 +55,7 @@ export function mapSectionContent(section: sectionContent) {
     decryption: returnDescription(decryption),
     urlHead: metadata.id_title,
     background: metadata.backgroud,
-    Table: Table ? Table : {},
+    Table: Table ? Table : undefined,
   };
 }
 

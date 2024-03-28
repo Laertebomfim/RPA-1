@@ -1,9 +1,12 @@
 'use client';
-import Base from '@/template/base';
 import { useEffect, useState } from 'react';
+
 import { dataMap, returnDataType } from '@/api/data-menu/data-map';
+
 import Error404 from '@/template/error-404/Error404';
+import Base from '@/template/base';
 import Loading from '@/template/loading/Loading';
+
 import GridComponent from '@/components/grid';
 import GridText from '@/components/gridText';
 import GridSection from '@/components/gridSecton';
